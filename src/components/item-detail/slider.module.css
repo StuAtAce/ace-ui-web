@@ -1,0 +1,34 @@
+@import "/src/styles/styles.scss";
+.container {
+  width: 320px;
+  padding: 15px;
+  box-sizing: border-box;   
+  align-items: center;
+}
+.swiper {
+  width: 100%;
+  height: 282px;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  display: flex;
+  max-width: 251px;
+  max-height: 251px;
+  object-fit: contain;
+  justify-content: center;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb {
+  width: 20;
+  height: 20;
+}
