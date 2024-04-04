@@ -1,23 +1,39 @@
 /* eslint-disable import/no-anonymous-default-export */
-const aceRed = {
-  primary: '#D40029',
-  focus: '#FF083C',
+
+const helpfulRed = '#D40029';
+const aceGray = '#333333';
+const mantisGreen = '#28A745';
+const danelion = '#F7D15E';
+const pool = '#00B6CE';
+const hyperlinkBlue = '#0D6EFD';
+
+const acenetPrimary = {
+  default: helpfulRed,
+  focus: '#D40029',
   hover: '#A30121',
   pressed: '#8F001D',
   disabled: '#FED7DE',
+  loading: '#FF083C'
 };
 
-const ejdBlue = {
-  primary: '#233044',
-  focus: '#00B5CE',
-  hover: '#00B5CE',
-  pressed: '#233044',
-  disabled: '#999',
+const acenetSecondary = {
+  default: aceGray,
+  focus: '#E0E0E0',
+  hover: '#1F1F1F',
+  pressed: '#141414',
+  disabled: '#E0E0E0',
+  loading: '#666'
 }
 
 export default {
-  aceRed,
-  ejdBlue,
+  acenetPrimary,
+  acenetSecondary,
+  helpfulRed,
+  aceGray,
+  mantisGreen,
+  danelion,
+  pool,
+  hyperlinkBlue,
   white: '#FFF',
   black: '#000',
   offWhiteBackground: '#F7F7F7',

@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import ImageSlider from '../components/item-detail/ImageSlider';
+import ImageSlider from '../components/image-slider/ImageSlider';
 
 const imageSliderMeta = {
-  title: 'Example/Item Details/Image Slider',
+  title: 'Ace-UI/Item Detail/Image Slider',
   component: ImageSlider,
   parameters: {
     layout: 'centered'

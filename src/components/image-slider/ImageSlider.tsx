@@ -15,6 +15,13 @@ interface ImageSliderProps {
 
 const ImageSlider: React.FC<ImageSliderProps> = ({images, platform = 'mobile'}) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any | null>(null);
+  const [activeImage, setActiveImage] = useState<string>(images[0]);
+  const [index, setIndex] = useState(0);
+
+  const handleThumbnail = (src: string) => {
+    const imageIndex = images.indexOf(src) ?? 0;
+    setIndex(imageIndex);
+  }
   return (
     <div className={styles.container}>
       <div id="sliderComp">
@@ -23,8 +30,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({images, platform = 'mobile'}) 
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          modules={platform === 'mobile' ? [Pagination] : []}
           className={styles.swiper}
+          tabIndex={index}
         >
           {images.map((obj)=>(
             <SwiperSlide><img src={obj} alt="product img"/></SwiperSlide>
@@ -40,7 +48,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({images, platform = 'mobile'}) 
             modules={[Navigation, Thumbs]}
             className={styles.swiper}>
             {images.map((obj) => (
-              <SwiperSlide><img src={obj} style={{maxWidth: 80}} alt="thumb img"/></SwiperSlide>
+              <SwiperSlide onClick={() => handleThumbnail(obj)}>
+                <img src={obj} className={styles.thumb} alt="thumb img"/>
+              </SwiperSlide>
             ))}
           </Swiper>
         )}

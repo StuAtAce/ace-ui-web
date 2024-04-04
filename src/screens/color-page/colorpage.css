@@ -1,0 +1,47 @@
+.storybook-page {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 24px;
+  padding: 48px 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  color: #333;
+}
+
+.storybook-page h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0 0 4px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.storybook-page h3 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0 0 4px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.storybook-page p {
+  margin: 1em 0;
+  font-size: 14px;
+}
+.storybook-page body {
+  font-size: 16px;
+}
+
+.storybook-page .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.storybook-page .color {
+  margin-left: 20px;
+  font-size: 16px; 
+  color: rgb(154, 154, 154);
+}
